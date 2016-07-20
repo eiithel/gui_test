@@ -1,1 +1,6 @@
-bouton1:2,2,2,2,2,2,2,
+bouton1:2,2,
+bouton2:2,2,
+bouton3:2,2,2,
+bouton4:
+bouton5:2,
+bouton6:2,
