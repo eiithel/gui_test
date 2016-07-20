@@ -8,6 +8,7 @@
 #include <QTextStream>
 #include <QApplication>
 #include <QFile>
+#include <QTime>
 
 
 class controler
@@ -18,6 +19,8 @@ public:
 
     void displayResults();
     void writeResults();
+
+
 
 public slots:
     void quitMyApp();

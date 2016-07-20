@@ -6,6 +6,7 @@
 #include "vigilbutton.h"
 #include "controler.h"
 #include "model.h"
+#include <QTime>
 
 namespace Ui {
 class MainWindow;
@@ -31,7 +32,6 @@ private:
     controler* _controler;
 
     Model* model;
-
 
 };
 

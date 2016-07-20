@@ -6,7 +6,7 @@
 #include <QPoint>
 #include <QRect>
 #include <QMultiMap>
-
+#include <QTime>
 
 class Model : public QObject
 {
@@ -16,8 +16,10 @@ public:
     ~Model();
 
     void increment(int nbutton, double time);
+    int toSecond(int ms);
     //getters
     QMultiMap<int, double> getMap(){ return _counter;}
+    QTime t;
 
 
 public slots:

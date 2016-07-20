@@ -49,7 +49,9 @@ void VigilButton::mousePressEvent(QMouseEvent * e)
     QAbstractButton::mousePressEvent(e);
     bodyShadow.setDistance(3.0);
     timesFont.setPointSizeF(fontSize-1);
-    _model->increment(_id,2);
+    double time = _model->t.elapsed();
+    time = _model->toSecond(time);
+    _model->increment(_id,time);
 }
 
 void VigilButton::mouseReleaseEvent(QMouseEvent * e)

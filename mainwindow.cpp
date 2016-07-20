@@ -12,6 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     model = new Model();
     _controler = new controler(model);
+    model->t.start();
     //    controler c(model);
     QObject::connect(qApp,SIGNAL(aboutToQuit()),this,SLOT(quitMyApp()));
 

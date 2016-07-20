@@ -6,6 +6,7 @@
 #include <QApplication>
 #include <QGridLayout>
 #include "mainwindow.h"
+#include <QTime>
 
 int main(int argc, char **argv)
 {
