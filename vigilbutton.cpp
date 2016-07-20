@@ -19,6 +19,7 @@ VigilButton::VigilButton(QWidget *parent) : QAbstractButton(parent), fontSize(12
     timesFont.setFamily("Myriad Pro");
     timesFont.setPointSize(fontSize);
     timesFont.setBold(true);
+
 }
 
 VigilButton::VigilButton(const QString &text,int w, int h, VigilColor FlatButtonColor, Shape shape, QWidget *parent) :
@@ -48,6 +49,7 @@ void VigilButton::mousePressEvent(QMouseEvent * e)
     QAbstractButton::mousePressEvent(e);
     bodyShadow.setDistance(3.0);
     timesFont.setPointSizeF(fontSize-1);
+    _model->increment(_id,2);
 }
 
 void VigilButton::mouseReleaseEvent(QMouseEvent * e)
@@ -140,3 +142,13 @@ void VigilButton::setFontSize(int size)
     timesFont.setPointSize(size);
     update();
 }
+
+void VigilButton::setid(int id){
+    _id =id;
+}
+
+void VigilButton::setmodel(Model* model){
+    _model = model;
+}
+
+

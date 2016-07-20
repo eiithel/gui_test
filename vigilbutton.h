@@ -12,6 +12,7 @@
 #include <QPaintEvent>
 #include "vigilbuttonpalette.h"
 #include "customshadoweffect.h"
+#include "model.h"
 
 
 class VigilButton : public QAbstractButton
@@ -29,6 +30,8 @@ public:
     void setShape(Shape s);
     void setColor(VigilColor c);
     void setFontSize(int size);
+    void setid(int id);
+    void setmodel(Model* model);
 
 protected:
     void paintEvent(QPaintEvent* e);
@@ -41,6 +44,8 @@ private:
     QFont timesFont;
     int fontSize;
     int xRadius, yRadius;
+    int _id;
+    Model *_model;
 };
 
 #endif // VIGILBUTTON_H

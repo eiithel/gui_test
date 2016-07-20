@@ -16,11 +16,18 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     vigilbutton.cpp \
     vigilbuttonpalette.cpp \
-    customshadoweffect.cpp
+    customshadoweffect.cpp \
+    model.cpp \
+    controler.cpp
 
 HEADERS  += mainwindow.h \
     vigilbutton.h \
     vigilbuttonpalette.h \
-    customshadoweffect.h
+    customshadoweffect.h \
+    model.h \
+    controler.h
 
 FORMS    += mainwindow.ui
+
+DISTFILES += \
+    clicks_results.txt
