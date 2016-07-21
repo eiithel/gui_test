@@ -1,11 +1,35 @@
 Type bouton, temps(secondes)
 
-value inserted!
-Thu Jul 21 10:27:20 2016
+Thu Jul 21 10:35:45 2016
+,VIDEO,1
 
-value inserted!
-Thu Jul 21 10:27:20 2016
+Thu Jul 21 10:35:45 2016
+,VIDEO,2
 
-value inserted!
-Thu Jul 21 10:27:20 2016
+Thu Jul 21 10:35:45 2016
+,VIDEO,5
+
+Thu Jul 21 10:35:45 2016
+,VIDEO,6
+
+Thu Jul 21 10:35:45 2016
+,VIDEO,4
+
+Thu Jul 21 10:35:45 2016
+,VIDEO,4
+
+Thu Jul 21 10:35:45 2016
+,VIDEO,4
+
+Thu Jul 21 10:38:20 2016
+,VIDEO,2
+
+Thu Jul 21 10:38:20 2016
+,VIDEO,2
+
+Thu Jul 21 10:38:20 2016
+,AUDIO,5
+
+Thu Jul 21 10:38:20 2016
+,AUDIO,4
 

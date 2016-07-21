@@ -3,9 +3,7 @@
 controler::controler(Model *model): _model(model)
 {
 
-    //    QObject::connect(qApp,SIGNAL(aboutToQuit()),this,SLOT(quitMyApp()));
     QObject::connect(_model,SIGNAL(newClick(int)),this,SLOT(AppendLine(int)));
-
 
 }
 
@@ -124,9 +122,16 @@ void controler::AppendLine(int nbutton){
         return;
     }
 
+    QString type;
+    if(nbutton <=3){
+        type ="VIDEO";}else{
+        type ="AUDIO";
+    }
+
     QTextStream stream(&outfile);
 
-    stream << "value inserted!\n";
-    stream << i.value() << "\n";
+    stream << i.value();
+    stream << "," << type << "," << nbutton <<"\n\n";
+
 }
 
