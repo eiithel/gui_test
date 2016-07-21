@@ -130,7 +130,11 @@ void VigilButton::setColor(VigilColor c)
         bp.setHSV(30,0.17);
         break;
     case LIGHT_GREEN:
-        bp.setHSV(105,0.63);
+        bp.setHSV(85,0.40);
+        break;
+    case LIGHT_BLUE:
+        bp.setHSV(180,0.30);
+        break;
     default:
         bp.setHSV(110,0.17);
         break;

@@ -10,6 +10,8 @@
 #include <QFile>
 #include <QTime>
 
+#define FIRST_TEST false //indique que c'est le 1er test avec le clinicien
+
 
 class controler
 {

@@ -20,7 +20,7 @@ class VigilButton : public QAbstractButton
 Q_OBJECT
 
 public:
-    enum VigilColor {BLUE,RED,ORANGE,GREEN,GRAY,LIGHT_GREEN};
+    enum VigilColor {BLUE,RED,ORANGE,GREEN,GRAY,LIGHT_GREEN,LIGHT_BLUE};
     Q_ENUM(VigilColor)
     enum Shape {FACTORY,ROUND, DEFAULT};
     Q_ENUM(Shape)

@@ -1,24 +1,291 @@
-bouton1:2,2,
-bouton2:2,2,
-bouton3:2,2,2,
-bouton4:
-bouton5:2,
-bouton6:2,
-bouton1:2246,1931,
-bouton2:3906,3773,
-bouton3:4712,4555,4407,
-bouton4:
-bouton5:8054,
-bouton6:9281,
-bouton1:5,4,
-bouton2:6,6,
-bouton3:8,7,7,
-bouton4:
-bouton5:10,
-bouton6:11,
-bouton1:1,1,
-bouton2:2,2,2,
-bouton3:5,5,3,
-bouton4:7,
-bouton5:7,
-bouton6:8,
+Type bouton, temps(secondes)
+
+VIDEO
+Coupures: 1,1,1,
+Qualite Image: 1,
+Delai Voix: 4,
+AUDIO
+Coupures:3,
+Echo: 2,
+Bruit:3,
+ --- Test suivant --- 
+
+VIDEO
+Coupures: 
+Qualite Image: 
+Delai Voix: 1,
+AUDIO
+Coupures:2,
+Echo: 0,
+Bruit:0,
+ --- Test suivant --- 
+
+VIDEO
+Coupures: 
+Qualite Image: 
+Delai Voix: 
+AUDIO
+Coupures:
+Echo: 
+Bruit:
+ --- Test suivant --- 
+
+VIDEO
+Coupures: 
+Qualite Image: 
+Delai Voix: 
+AUDIO
+Coupures:
+Echo: 
+Bruit:
+ --- Test suivant --- 
+
+VIDEO
+Coupures: 
+Qualite Image: 
+Delai Voix: 
+AUDIO
+Coupures:
+Echo: 
+Bruit:
+ --- Test suivant --- 
+
+VIDEO
+Coupures: 
+Qualite Image: 
+Delai Voix: 
+AUDIO
+Coupures:
+Echo: 
+Bruit:
+ --- Test suivant --- 
+
+VIDEO
+Coupures: 
+Qualite Image: 
+Delai Voix: 
+AUDIO
+Coupures:
+Echo: 
+Bruit:
+ --- Test suivant --- 
+
+VIDEO
+Coupures: 
+Qualite Image: 
+Delai Voix: 
+AUDIO
+Coupures:
+Echo: 
+Bruit:
+ --- Test suivant --- 
+
+VIDEO
+Coupures: 
+Qualite Image: 
+Delai Voix: 
+AUDIO
+Coupures:
+Echo: 
+Bruit:
+ --- Test suivant --- 
+
+VIDEO
+Coupures: 
+Qualite Image: 
+Delai Voix: 
+AUDIO
+Coupures:
+Echo: 
+Bruit:
+ --- Test suivant --- 
+
+VIDEO
+Coupures: 
+Qualite Image: 
+Delai Voix: 
+AUDIO
+Coupures:
+Echo: 
+Bruit:
+ --- Test suivant --- 
+
+VIDEO
+Coupures: 
+Qualite Image: 
+Delai Voix: 
+AUDIO
+Coupures:
+Echo: 
+Bruit:
+ --- Test suivant --- 
+
+VIDEO
+Coupures: 
+Qualite Image: 
+Delai Voix: 
+AUDIO
+Coupures:
+Echo: 
+Bruit:
+ --- Test suivant --- 
+
+VIDEO
+Coupures: 
+Qualite Image: 
+Delai Voix: 
+AUDIO
+Coupures:
+Echo: 
+Bruit:
+ --- Test suivant --- 
+
+VIDEO
+Coupures: 
+Qualite Image: 
+Delai Voix: 
+AUDIO
+Coupures:
+Echo: 
+Bruit:
+ --- Test suivant --- 
+
+VIDEO
+Coupures: 
+Qualite Image: 
+Delai Voix: 
+AUDIO
+Coupures:
+Echo: 
+Bruit:
+ --- Test suivant --- 
+
+VIDEO
+Coupures: 
+Qualite Image: 
+Delai Voix: 
+AUDIO
+Coupures:
+Echo: 
+Bruit:
+ --- Test suivant --- 
+
+VIDEO
+Coupures: 
+Qualite Image: 
+Delai Voix: 
+AUDIO
+Coupures:
+Echo: 
+Bruit:
+ --- Test suivant --- 
+
+VIDEO
+Coupures: 
+Qualite Image: 
+Delai Voix: 
+AUDIO
+Coupures:
+Echo: 
+Bruit:
+ --- Test suivant --- 
+
+VIDEO
+Coupures: 
+Qualite Image: 
+Delai Voix: 
+AUDIO
+Coupures:
+Echo: 
+Bruit:
+ --- Test suivant --- 
+
+VIDEO
+Coupures: 
+Qualite Image: 
+Delai Voix: 
+AUDIO
+Coupures:
+Echo: 
+Bruit:
+ --- Test suivant --- 
+
+VIDEO
+Coupures: 
+Qualite Image: 
+Delai Voix: 
+AUDIO
+Coupures:
+Echo: 
+Bruit:
+ --- Test suivant --- 
+
+VIDEO
+Coupures: 
+Qualite Image: 
+Delai Voix: 
+AUDIO
+Coupures:
+Echo: 
+Bruit:
+ --- Test suivant --- 
+
+VIDEO
+Coupures: 
+Qualite Image: 
+Delai Voix: 
+AUDIO
+Coupures:
+Echo: 
+Bruit:
+ --- Test suivant --- 
+
+VIDEO
+Coupures: 
+Qualite Image: 
+Delai Voix: 
+AUDIO
+Coupures:
+Echo: 
+Bruit:
+ --- Test suivant --- 
+
+VIDEO
+Coupures: 
+Qualite Image: 
+Delai Voix: 
+AUDIO
+Coupures:
+Echo: 
+Bruit:
+ --- Test suivant --- 
+
+VIDEO
+Coupures: 
+Qualite Image: 
+Delai Voix: 
+AUDIO
+Coupures:
+Echo: 
+Bruit:
+ --- Test suivant --- 
+
+VIDEO
+Coupures: 
+Qualite Image: 
+Delai Voix: 
+AUDIO
+Coupures:
+Echo: 
+Bruit:
+ --- Test suivant --- 
+
+VIDEO
+Coupures: 
+Qualite Image: 
+Delai Voix: 
+AUDIO
+Coupures:
+Echo: 
+Bruit:
+ --- Test suivant --- 

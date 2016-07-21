@@ -42,18 +42,24 @@ void controler::writeResults(){
         return;
     }
 
-    //    outfile.write("bouton1:");
     QTextStream stream(&outfile);
 
-    stream << "bouton1:";
+#if FIRST_TEST
+
+    stream << "Type bouton, temps(secondes)\n";
+
+#endif
+
+    stream << "\nVIDEO";
+
+    stream << "\nCoupures: ";
     while (i1 != results.end() && i1.key() == 1) {
         stream << i1.value() <<",";
         ++i1;
     }
     stream << "\n";
 
-    //    outfile.write("bouton2:");
-    stream << "bouton2:";
+    stream << "Qualite Image: ";
 
     while (i2 != results.end() && i2.key() == 2) {
         stream << i2.value() <<",";
@@ -61,37 +67,36 @@ void controler::writeResults(){
     }
     stream << "\n";
 
-    stream << "bouton3:";
+    stream << "Delai Voix: ";
 
     while (i3 != results.end() && i3.key() == 3) {
         stream << i3.value() <<",";
         ++i3;
     }
-    stream << "\n";
 
-    stream << "bouton4:";
+    stream << "\nAUDIO";
+
+    stream << "\nCoupures:";
 
     while (i4 != results.end() && i4.key() == 4) {
         stream << i4.value() <<",";
         ++i4;
     }
-    stream << "\n";
 
-    stream << "bouton5:";
+    stream << "\nEcho: ";
 
     while (i5 != results.end() && i5.key() == 5) {
         stream << i5.value() <<",";
         ++i5;
     }
-    stream << "\n";
 
-    stream << "bouton6:";
+    stream << "\nBruit:";
 
     while (i6 != results.end() && i6.key() == 6) {
         stream << i6.value() <<",";
         ++i6;
     }
-    stream << "\n";
+    stream << "\n --- Test suivant --- \n";
 
 
     outfile.close();
