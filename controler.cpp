@@ -124,7 +124,8 @@ void controler::AppendLine(int nbutton){
 
     QString type;
     if(nbutton <=3){
-        type ="VIDEO";}else{
+        type ="VIDEO";
+    }else{
         type ="AUDIO";
     }
 

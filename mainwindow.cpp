@@ -8,17 +8,9 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
-
     ui->setupUi(this);
     model = new Model();
     _controler = new controler(model);
-    //    model->t.start();
-    //    model->_time
-    //    controler c(model);
-//    QObject::connect(qApp,SIGNAL(aboutToQuit()),this,SLOT(quitMyApp()));
-//    QObject::connect(model,SIGNAL(newClick(int)),_controler,SLOT(AppendLine(int)));
-
-
 
     ui->pushButton_1->setFixedSize(120,60);
     ui->pushButton_1->setText("Coupures");
@@ -66,7 +58,10 @@ MainWindow::MainWindow(QWidget *parent) :
     QFont font("Myriad Pro");
     font.setBold(true);
     ui->label->setFont(font);
+    ui->label->setStyleSheet("QLabel { color : green; }");
+
     ui->label_2->setFont(font);
+    ui->label_2->setStyleSheet("QLabel { color : blue; }");
 
 }
 
