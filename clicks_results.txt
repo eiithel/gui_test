@@ -1,19 +1,11 @@
 Type bouton, temps(secondes)
 
+value inserted!
+Thu Jul 21 10:27:20 2016
 
+value inserted!
+Thu Jul 21 10:27:20 2016
 
-VIDEO
-Coupures: Thu Jul 21 09:42:20 2016
-,Thu Jul 21 09:42:20 2016
-,
-Qualite Image: 
-Delai Voix: 
-AUDIO
-Coupures:Thu Jul 21 09:42:20 2016
-,Thu Jul 21 09:42:20 2016
-,Thu Jul 21 09:42:20 2016
-,
-Echo: Thu Jul 21 09:42:20 2016
-,
-Bruit:
- --- Test suivant --- 
+value inserted!
+Thu Jul 21 10:27:20 2016
+

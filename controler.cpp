@@ -4,6 +4,8 @@ controler::controler(Model *model): _model(model)
 {
 
     //    QObject::connect(qApp,SIGNAL(aboutToQuit()),this,SLOT(quitMyApp()));
+    QObject::connect(_model,SIGNAL(newClick(int)),this,SLOT(AppendLine(int)));
+
 
 }
 
@@ -106,3 +108,25 @@ void controler::writeResults(){
 void controler::quitMyApp(){
     writeResults();
 }
+
+void controler::AppendLine(int nbutton){
+
+    QMultiMap<int,char*> results;
+    results =_model->getMap();
+    QMultiMap<int,char*>::const_iterator i = results.find(nbutton);
+
+
+    QFile outfile(QString("/home/ethel/qwt-5.2/test-ethel/Vigil_3G/clicks_results.txt"));
+
+    if (!outfile.open(QIODevice::WriteOnly | QIODevice::Text | QIODevice::Append))
+    {
+        qDebug() << "Unable to create file";
+        return;
+    }
+
+    QTextStream stream(&outfile);
+
+    stream << "value inserted!\n";
+    stream << i.value() << "\n";
+}
+

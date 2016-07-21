@@ -28,6 +28,7 @@ public slots:
 
 signals:
 
+    void newClick(int nbutton);
 
 private:
 

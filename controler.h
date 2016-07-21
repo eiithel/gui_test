@@ -9,13 +9,14 @@
 #include <QApplication>
 #include <QFile>
 #include <QTime>
+#include <QList>
 
 #define FIRST_TEST false //indique que c'est le 1er test avec le clinicien
 
 
-class controler
+class controler : public QObject
 {
-    //    Q_OBJECT
+    Q_OBJECT
 public:
     controler(Model *model);
 
@@ -26,6 +27,7 @@ public:
 
 public slots:
     void quitMyApp();
+    void AppendLine(int nbutton);
 
 
 private:

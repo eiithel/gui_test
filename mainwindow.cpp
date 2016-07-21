@@ -12,10 +12,11 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     model = new Model();
     _controler = new controler(model);
-//    model->t.start();
+    //    model->t.start();
     //    model->_time
     //    controler c(model);
-    QObject::connect(qApp,SIGNAL(aboutToQuit()),this,SLOT(quitMyApp()));
+//    QObject::connect(qApp,SIGNAL(aboutToQuit()),this,SLOT(quitMyApp()));
+//    QObject::connect(model,SIGNAL(newClick(int)),_controler,SLOT(AppendLine(int)));
 
 
 
@@ -28,7 +29,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->pushButton_2->setFixedSize(120,60);
     ui->pushButton_2->setText("Qualité");
-    ui->pushButton_2->setColor(VigilButton::LIGHT_GREEN);
+    ui->pushButton_2->setColor(VigilButton::GREEN);
     ui->pushButton_2->setShape(VigilButton::ROUND);
     ui->pushButton_2->setid(2);
     ui->pushButton_2->setmodel(this->model);
@@ -49,7 +50,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->pushButton_5->setFixedSize(120,60);
     ui->pushButton_5->setText("Echo");
-    ui->pushButton_5->setColor(VigilButton::LIGHT_BLUE);
+    ui->pushButton_5->setColor(VigilButton::BLUE);
     ui->pushButton_5->setShape(VigilButton::ROUND);
     ui->pushButton_5->setid(5);
     ui->pushButton_5->setmodel(this->model);
@@ -67,9 +68,6 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->label->setFont(font);
     ui->label_2->setFont(font);
 
-    //_controler->displayResults();
-
-
 }
 
 MainWindow::~MainWindow()
@@ -77,16 +75,6 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
-void MainWindow::on_pushButton_1_clicked()
-{
-
-}
-
-void MainWindow::increment_counter(int nb){
-//    double timeTest =2;
-//    model->increment(nb, timeTest);
-}
 
 void MainWindow::quitMyApp(){
     _controler->writeResults();

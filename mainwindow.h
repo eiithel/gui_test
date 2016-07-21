@@ -21,8 +21,6 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pushButton_1_clicked();
-    void increment_counter(int nb);
     void quitMyApp();
 
 private:
