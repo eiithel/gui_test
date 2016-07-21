@@ -12,7 +12,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     model = new Model();
     _controler = new controler(model);
-    model->t.start();
+//    model->t.start();
+    //    model->_time
     //    controler c(model);
     QObject::connect(qApp,SIGNAL(aboutToQuit()),this,SLOT(quitMyApp()));
 
@@ -83,8 +84,8 @@ void MainWindow::on_pushButton_1_clicked()
 }
 
 void MainWindow::increment_counter(int nb){
-    double timeTest =2;
-    model->increment(nb, timeTest);
+//    double timeTest =2;
+//    model->increment(nb, timeTest);
 }
 
 void MainWindow::quitMyApp(){

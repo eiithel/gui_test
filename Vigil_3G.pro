@@ -31,3 +31,5 @@ FORMS    += mainwindow.ui
 
 DISTFILES += \
     clicks_results.txt
+
+QMAKE_CXXFLAGS += -std=c++0x

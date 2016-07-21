@@ -7,6 +7,8 @@
 #include <QRect>
 #include <QMultiMap>
 #include <QTime>
+#include <ctime>
+
 
 class Model : public QObject
 {
@@ -15,12 +17,12 @@ public:
     Model();
     ~Model();
 
-    void increment(int nbutton, double time);
+    void increment(int nbutton, char* time);
     int toSecond(int ms);
     //getters
-    QMultiMap<int, double> getMap(){ return _counter;}
+    QMultiMap<int, char*> getMap(){ return _counter;}
     QTime t;
-
+    std::time_t _time;
 
 public slots:
 
@@ -29,7 +31,7 @@ signals:
 
 private:
 
-    QMultiMap<int, double> _counter;//6keys for the 6 buttons
+    QMultiMap<int, char*> _counter;//6keys for the 6 buttons
 
 
 };
