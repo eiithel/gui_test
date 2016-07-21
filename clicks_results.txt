@@ -90,3 +90,29 @@ Thu Jul 21 10:48:13 2016
 Thu Jul 21 10:48:13 2016
 ,AUDIO,5
 
+Thu Jul 21 11:01:36 2016
+,AUDIO,5
+
+Thu Jul 21 11:01:36 2016
+,VIDEO,3
+
+Thu Jul 21 11:01:36 2016
+,VIDEO,2
+
+Thu Jul 21 11:01:36 2016
+,AUDIO,6
+
+Thu Jul 21 11:01:36 2016
+,VIDEO,1
+
+--------------Test suivant---------------
+Thu Jul 21 11:01:48 2016
+,VIDEO,2
+
+Thu Jul 21 11:01:48 2016
+,AUDIO,5
+
+Thu Jul 21 11:01:48 2016
+,AUDIO,4
+
+--------------Test suivant---------------

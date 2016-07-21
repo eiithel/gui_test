@@ -11,6 +11,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     model = new Model();
     _controler = new controler(model);
+    connect(qApp, SIGNAL(aboutToQuit()), _controler, SLOT(quitMyApp()));
 
     ui->pushButton_1->setFixedSize(120,60);
     ui->pushButton_1->setText("Coupures");

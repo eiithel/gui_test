@@ -104,7 +104,22 @@ void controler::writeResults(){
 
 
 void controler::quitMyApp(){
-    writeResults();
+    //writeResults();
+
+        QFile outfile(QString("/home/ethel/qwt-5.2/test-ethel/Vigil_3G/clicks_results.txt"));
+
+    if (!outfile.open(QIODevice::WriteOnly | QIODevice::Text | QIODevice::Append))
+    {
+        qDebug() << "Unable to create file";
+        return;
+    }
+
+    QTextStream stream(&outfile);
+
+    stream << "--------------Test suivant---------------\n";
+
+    outfile.close();
+
 }
 
 void controler::AppendLine(int nbutton){
@@ -133,6 +148,7 @@ void controler::AppendLine(int nbutton){
 
     stream << i.value();
     stream << "," << type << "," << nbutton <<"\n\n";
+
 
 }
 

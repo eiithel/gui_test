@@ -24,7 +24,6 @@ public:
     void writeResults();
 
 
-
 public slots:
     void quitMyApp();
     void AppendLine(int nbutton);
