@@ -106,7 +106,7 @@ void controler::writeResults(){
 void controler::quitMyApp(){
     //writeResults();
 
-        QFile outfile(QString("/home/ethel/qwt-5.2/test-ethel/Vigil_3G/clicks_results.txt"));
+    QFile outfile(QString("/home/ethel/qwt-5.2/test-ethel/Vigil_3G/clicks_results.txt"));
 
     if (!outfile.open(QIODevice::WriteOnly | QIODevice::Text | QIODevice::Append))
     {
@@ -128,8 +128,15 @@ void controler::AppendLine(int nbutton){
     results =_model->getMap();
     QMultiMap<int,char*>::const_iterator i = results.find(nbutton);
 
-
     QFile outfile(QString("/home/ethel/qwt-5.2/test-ethel/Vigil_3G/clicks_results.txt"));
+
+#if WINDOWS_OS
+
+    //    QFile outfile(QString("C:\Temp\clicks_results.txt"));
+
+    outfile.setFileName("C:\Temp\clicks_results.txt");
+#endif
+
 
     if (!outfile.open(QIODevice::WriteOnly | QIODevice::Text | QIODevice::Append))
     {

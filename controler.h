@@ -12,7 +12,7 @@
 #include <QList>
 
 #define FIRST_TEST false //indique que c'est le 1er test avec le clinicien
-
+#define WINDOWS_OS true
 
 class controler : public QObject
 {

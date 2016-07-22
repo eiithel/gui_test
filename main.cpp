@@ -13,6 +13,7 @@
  * L'application enregistre dans un fichier .txt l'historique des clicks du participant
  * durant une seance de test. Le fichier présente une trace sous la forme:
  * [Date, TYPE (AUDIO/VIDEO), code evenement].
+ * Le fichier de logs est enregistré sur le bureau sous le nom "Tempclicks_results.txt
  *
  * Code evenement
  * - 1 Coupures Video           - 4 Coupures
