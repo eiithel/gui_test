@@ -7,6 +7,7 @@
 #include "controler.h"
 #include "model.h"
 #include <QTime>
+#include <QTableWidget>
 
 namespace Ui {
 class MainWindow;

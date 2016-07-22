@@ -1,0 +1,15 @@
+INPUT(
+./release/main.o
+./release/mainwindow.o
+./release/vigilbutton.o
+./release/vigilbuttonpalette.o
+./release/customshadoweffect.o
+./release/model.o
+./release/controler.o
+./release/vigil_3g_plugin_import.o
+./release/moc_mainwindow.o
+./release/moc_vigilbutton.o
+./release/moc_customshadoweffect.o
+./release/moc_model.o
+./release/moc_controler.o
+);
