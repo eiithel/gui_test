@@ -30,6 +30,7 @@ HEADERS  += mainwindow.h \
 FORMS    += mainwindow.ui
 
 DISTFILES += \
-    clicks_results.txt
+    clicks_results.txt \
+    C:Tempclicks_results.txt
 
 QMAKE_CXXFLAGS += -std=c++0x

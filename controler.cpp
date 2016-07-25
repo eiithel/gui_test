@@ -10,10 +10,10 @@ controler::controler(Model *model): _model(model)
 
 void controler::displayResults(){
 
-    QMultiMap<int,char*> results;
+    QMultiMap<int,double> results;
     results =_model->getMap();
 
-    QMultiMap<int,char*>::const_iterator i = results.find(1);
+    QMultiMap<int,double>::const_iterator i = results.find(1);
     while (i != results.end() && i.key() == 1) {
         qDebug() << i.value();
         ++i;
@@ -24,15 +24,15 @@ void controler::displayResults(){
 
 void controler::writeResults(){
 
-    QMultiMap<int,char*> results;
+    QMultiMap<int,double> results;
     results =_model->getMap();
 
-    QMultiMap<int,char*>::const_iterator i1 = results.find(1);
-    QMultiMap<int,char*>::const_iterator i2 = results.find(2);
-    QMultiMap<int,char*>::const_iterator i3 = results.find(3);
-    QMultiMap<int,char*>::const_iterator i4 = results.find(4);
-    QMultiMap<int,char*>::const_iterator i5 = results.find(5);
-    QMultiMap<int,char*>::const_iterator i6 = results.find(6);
+    QMultiMap<int,double>::const_iterator i1 = results.find(1);
+    QMultiMap<int,double>::const_iterator i2 = results.find(2);
+    QMultiMap<int,double>::const_iterator i3 = results.find(3);
+    QMultiMap<int,double>::const_iterator i4 = results.find(4);
+    QMultiMap<int,double>::const_iterator i5 = results.find(5);
+    QMultiMap<int,double>::const_iterator i6 = results.find(6);
 
     QFile outfile(QString("/home/ethel/qwt-5.2/test-ethel/Vigil_3G/clicks_results.txt"));
 
@@ -124,9 +124,9 @@ void controler::quitMyApp(){
 
 void controler::AppendLine(int nbutton){
 
-    QMultiMap<int,char*> results;
+    QMultiMap<int,double> results;
     results =_model->getMap();
-    QMultiMap<int,char*>::const_iterator i = results.find(nbutton);
+    QMultiMap<int,double>::const_iterator i = results.find(nbutton);
 
     QFile outfile(QString("/home/ethel/qwt-5.2/test-ethel/Vigil_3G/clicks_results.txt"));
 
@@ -154,7 +154,7 @@ void controler::AppendLine(int nbutton){
     QTextStream stream(&outfile);
 
     stream << i.value();
-    stream << "," << type << "," << nbutton <<"\n\n";
+    stream << "," << type << "," << nbutton <<"\n";
 
 
 }

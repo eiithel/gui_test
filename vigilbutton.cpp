@@ -1,6 +1,6 @@
 #include "vigilbutton.h"
 
-VigilButton::VigilButton(QWidget *parent) : QAbstractButton(parent), fontSize(12)
+VigilButton::VigilButton(QWidget *parent) : QAbstractButton(parent), fontSize(12), _counter(0)
 {
     setText("default");
     setFixedSize(50,50);
@@ -50,9 +50,11 @@ void VigilButton::mousePressEvent(QMouseEvent * e)
     bodyShadow.setDistance(3.0);
     timesFont.setPointSizeF(fontSize-1);
 
-//    double time = _model->t.elapsed();
-//    time = _model->toSecond(time);
-    char* time = std::asctime(std::localtime(&_model->_time));
+    double time = std::chrono::duration_cast<std::chrono::seconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+
+    //incrementation du compteur LCD
+    _counter++;
+    _lcdnb->display(_counter);
 
     _model->increment(_id,time);
 }
@@ -159,5 +161,10 @@ void VigilButton::setid(int id){
 void VigilButton::setmodel(Model* model){
     _model = model;
 }
+
+void VigilButton::setLcdNb(QLCDNumber* nb){
+    _lcdnb = nb;
+}
+
 
 

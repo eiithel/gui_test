@@ -10,9 +10,11 @@
 #include <QGradient>
 #include <QPainterPath>
 #include <QPaintEvent>
+#include <QLCDNumber>
 #include "vigilbuttonpalette.h"
 #include "customshadoweffect.h"
 #include "model.h"
+#include <chrono>
 
 
 class VigilButton : public QAbstractButton
@@ -32,6 +34,7 @@ public:
     void setFontSize(int size);
     void setid(int id);
     void setmodel(Model* model);
+    void setLcdNb(QLCDNumber* nb);
 
 protected:
     void paintEvent(QPaintEvent* e);
@@ -46,6 +49,8 @@ private:
     int xRadius, yRadius;
     int _id;
     Model *_model;
+    QLCDNumber *_lcdnb;
+    int _counter;
 };
 
 #endif // VIGILBUTTON_H

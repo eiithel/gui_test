@@ -21,6 +21,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->pushButton_1->setid(1);
     ui->pushButton_1->setmodel(this->model);
     ui->pushButton_1->setFontSize(22);
+    ui->pushButton_1->setLcdNb(ui->lcdNumber);
 
     ui->pushButton_2->setFixedSize(400,180);
     ui->pushButton_2->setText("Qualité");
@@ -29,6 +30,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->pushButton_2->setid(2);
     ui->pushButton_2->setmodel(this->model);
     ui->pushButton_2->setFontSize(22);
+    ui->pushButton_2->setLcdNb(ui->lcdNumber_2);
 
 
     ui->pushButton_3->setFixedSize(400,180);
@@ -38,6 +40,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->pushButton_3->setid(3);
     ui->pushButton_3->setmodel(this->model);
     ui->pushButton_3->setFontSize(22);
+    ui->pushButton_3->setLcdNb(ui->lcdNumber_3);
 
 
     ui->pushButton_4->setFixedSize(400,180);
@@ -47,6 +50,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->pushButton_4->setid(4);
     ui->pushButton_4->setmodel(this->model);
     ui->pushButton_4->setFontSize(22);
+    ui->pushButton_4->setLcdNb(ui->lcdNumber_4);
 
 
     ui->pushButton_5->setFixedSize(400,180);
@@ -56,6 +60,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->pushButton_5->setid(5);
     ui->pushButton_5->setmodel(this->model);
     ui->pushButton_5->setFontSize(22);
+    ui->pushButton_5->setLcdNb(ui->lcdNumber_5);
 
 
     ui->pushButton_6->setFixedSize(400,180);
@@ -65,6 +70,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->pushButton_6->setid(6);
     ui->pushButton_6->setmodel(this->model);
     ui->pushButton_6->setFontSize(22);
+    ui->pushButton_6->setLcdNb(ui->lcdNumber_6);
 
 
     QFont font("Myriad Pro",22);

@@ -17,10 +17,10 @@ public:
     Model();
     ~Model();
 
-    void increment(int nbutton, char* time);
+    void increment(int nbutton, double time);
     int toSecond(int ms);
     //getters
-    QMultiMap<int, char*> getMap(){ return _counter;}
+    QMultiMap<int, double> getMap(){ return _counter;}
     QTime t;
     std::time_t _time;
 
@@ -32,7 +32,7 @@ signals:
 
 private:
 
-    QMultiMap<int, char*> _counter;//6keys for the 6 buttons
+    QMultiMap<int, double> _counter;//6keys for the 6 buttons
 
 
 };

@@ -11,7 +11,7 @@ Model::~Model(){
 }
 
 
-void Model::increment(int nbutton, char* time){
+void Model::increment(int nbutton, double time){
     _counter.insert(nbutton,time);
     emit Model::newClick(nbutton);
 }
