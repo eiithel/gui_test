@@ -16,6 +16,7 @@
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLCDNumber>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QSpacerItem>
@@ -34,14 +35,20 @@ public:
     QHBoxLayout *horizontalLayout;
     QGridLayout *gridLayout;
     VigilButton *pushButton_3;
-    VigilButton *pushButton_2;
-    VigilButton *pushButton_1;
     QLabel *label;
+    QLCDNumber *lcdNumber;
+    VigilButton *pushButton_1;
+    VigilButton *pushButton_2;
+    QLCDNumber *lcdNumber_2;
+    QLCDNumber *lcdNumber_3;
     QSpacerItem *horizontalSpacer;
     QGridLayout *gridLayout_2;
-    VigilButton *pushButton_4;
     VigilButton *pushButton_5;
     VigilButton *pushButton_6;
+    VigilButton *pushButton_4;
+    QLCDNumber *lcdNumber_4;
+    QLCDNumber *lcdNumber_5;
+    QLCDNumber *lcdNumber_6;
     QLabel *label_2;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -72,32 +79,15 @@ public:
         buttonGroup->addButton(pushButton_3);
         pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
 
-        gridLayout->addWidget(pushButton_3, 3, 0, 1, 1);
-
-        pushButton_2 = new VigilButton(centralWidget);
-        buttonGroup->addButton(pushButton_2);
-        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-
-        gridLayout->addWidget(pushButton_2, 2, 0, 1, 1);
-
-        pushButton_1 = new VigilButton(centralWidget);
-        buttonGroup->addButton(pushButton_1);
-        pushButton_1->setObjectName(QStringLiteral("pushButton_1"));
-        QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Fixed);
-        sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(pushButton_1->sizePolicy().hasHeightForWidth());
-        pushButton_1->setSizePolicy(sizePolicy);
-
-        gridLayout->addWidget(pushButton_1, 1, 0, 1, 1);
+        gridLayout->addWidget(pushButton_3, 4, 0, 1, 1);
 
         label = new QLabel(centralWidget);
         label->setObjectName(QStringLiteral("label"));
-        QSizePolicy sizePolicy1(QSizePolicy::Minimum, QSizePolicy::Minimum);
-        sizePolicy1.setHorizontalStretch(0);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(label->sizePolicy().hasHeightForWidth());
-        label->setSizePolicy(sizePolicy1);
+        QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(label->sizePolicy().hasHeightForWidth());
+        label->setSizePolicy(sizePolicy);
         QFont font;
         font.setKerning(true);
         label->setFont(font);
@@ -111,6 +101,50 @@ public:
 
         gridLayout->addWidget(label, 0, 0, 1, 1);
 
+        lcdNumber = new QLCDNumber(centralWidget);
+        lcdNumber->setObjectName(QStringLiteral("lcdNumber"));
+        QFont font1;
+        font1.setKerning(false);
+        lcdNumber->setFont(font1);
+        lcdNumber->setFrameShape(QFrame::NoFrame);
+        lcdNumber->setSmallDecimalPoint(true);
+        lcdNumber->setSegmentStyle(QLCDNumber::Flat);
+
+        gridLayout->addWidget(lcdNumber, 2, 1, 1, 1);
+
+        pushButton_1 = new VigilButton(centralWidget);
+        buttonGroup->addButton(pushButton_1);
+        pushButton_1->setObjectName(QStringLiteral("pushButton_1"));
+        QSizePolicy sizePolicy1(QSizePolicy::Minimum, QSizePolicy::Fixed);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(pushButton_1->sizePolicy().hasHeightForWidth());
+        pushButton_1->setSizePolicy(sizePolicy1);
+
+        gridLayout->addWidget(pushButton_1, 2, 0, 1, 1);
+
+        pushButton_2 = new VigilButton(centralWidget);
+        buttonGroup->addButton(pushButton_2);
+        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
+
+        gridLayout->addWidget(pushButton_2, 3, 0, 1, 1);
+
+        lcdNumber_2 = new QLCDNumber(centralWidget);
+        lcdNumber_2->setObjectName(QStringLiteral("lcdNumber_2"));
+        lcdNumber_2->setFrameShape(QFrame::NoFrame);
+        lcdNumber_2->setSmallDecimalPoint(true);
+        lcdNumber_2->setSegmentStyle(QLCDNumber::Flat);
+
+        gridLayout->addWidget(lcdNumber_2, 3, 1, 1, 1);
+
+        lcdNumber_3 = new QLCDNumber(centralWidget);
+        lcdNumber_3->setObjectName(QStringLiteral("lcdNumber_3"));
+        lcdNumber_3->setFrameShape(QFrame::NoFrame);
+        lcdNumber_3->setSmallDecimalPoint(true);
+        lcdNumber_3->setSegmentStyle(QLCDNumber::Flat);
+
+        gridLayout->addWidget(lcdNumber_3, 4, 1, 1, 1);
+
 
         horizontalLayout->addLayout(gridLayout);
 
@@ -121,31 +155,55 @@ public:
         gridLayout_2 = new QGridLayout();
         gridLayout_2->setSpacing(6);
         gridLayout_2->setObjectName(QStringLiteral("gridLayout_2"));
-        pushButton_4 = new VigilButton(centralWidget);
+        pushButton_5 = new VigilButton(centralWidget);
         buttonGroup_2 = new QButtonGroup(MainWindow);
         buttonGroup_2->setObjectName(QStringLiteral("buttonGroup_2"));
-        buttonGroup_2->addButton(pushButton_4);
-        pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
-
-        gridLayout_2->addWidget(pushButton_4, 1, 0, 1, 1);
-
-        pushButton_5 = new VigilButton(centralWidget);
         buttonGroup_2->addButton(pushButton_5);
         pushButton_5->setObjectName(QStringLiteral("pushButton_5"));
 
-        gridLayout_2->addWidget(pushButton_5, 2, 0, 1, 1);
+        gridLayout_2->addWidget(pushButton_5, 5, 0, 1, 1);
 
         pushButton_6 = new VigilButton(centralWidget);
         buttonGroup_2->addButton(pushButton_6);
         pushButton_6->setObjectName(QStringLiteral("pushButton_6"));
-        QFont font1;
-        font1.setBold(false);
-        font1.setUnderline(false);
-        font1.setWeight(50);
-        pushButton_6->setFont(font1);
+        QFont font2;
+        font2.setBold(false);
+        font2.setUnderline(false);
+        font2.setWeight(50);
+        pushButton_6->setFont(font2);
         pushButton_6->setAutoFillBackground(false);
 
-        gridLayout_2->addWidget(pushButton_6, 3, 0, 1, 1);
+        gridLayout_2->addWidget(pushButton_6, 6, 0, 1, 1);
+
+        pushButton_4 = new VigilButton(centralWidget);
+        buttonGroup_2->addButton(pushButton_4);
+        pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
+
+        gridLayout_2->addWidget(pushButton_4, 4, 0, 1, 1);
+
+        lcdNumber_4 = new QLCDNumber(centralWidget);
+        lcdNumber_4->setObjectName(QStringLiteral("lcdNumber_4"));
+        lcdNumber_4->setFrameShape(QFrame::NoFrame);
+        lcdNumber_4->setSmallDecimalPoint(true);
+        lcdNumber_4->setSegmentStyle(QLCDNumber::Flat);
+
+        gridLayout_2->addWidget(lcdNumber_4, 4, 1, 1, 1);
+
+        lcdNumber_5 = new QLCDNumber(centralWidget);
+        lcdNumber_5->setObjectName(QStringLiteral("lcdNumber_5"));
+        lcdNumber_5->setFrameShape(QFrame::NoFrame);
+        lcdNumber_5->setSmallDecimalPoint(true);
+        lcdNumber_5->setSegmentStyle(QLCDNumber::Flat);
+
+        gridLayout_2->addWidget(lcdNumber_5, 5, 1, 1, 1);
+
+        lcdNumber_6 = new QLCDNumber(centralWidget);
+        lcdNumber_6->setObjectName(QStringLiteral("lcdNumber_6"));
+        lcdNumber_6->setFrameShape(QFrame::NoFrame);
+        lcdNumber_6->setSmallDecimalPoint(true);
+        lcdNumber_6->setSegmentStyle(QLCDNumber::Flat);
+
+        gridLayout_2->addWidget(lcdNumber_6, 6, 1, 1, 1);
 
         label_2 = new QLabel(centralWidget);
         label_2->setObjectName(QStringLiteral("label_2"));
@@ -177,12 +235,12 @@ public:
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
         pushButton_3->setText(QApplication::translate("MainWindow", "D\303\251lai Voix", 0));
-        pushButton_2->setText(QApplication::translate("MainWindow", "Qualit\303\251 Image", 0));
-        pushButton_1->setText(QApplication::translate("MainWindow", "Coupures", 0));
         label->setText(QApplication::translate("MainWindow", "    VIDEO", 0));
-        pushButton_4->setText(QApplication::translate("MainWindow", "Coupures", 0));
+        pushButton_1->setText(QApplication::translate("MainWindow", "Coupures", 0));
+        pushButton_2->setText(QApplication::translate("MainWindow", "Qualit\303\251 Image", 0));
         pushButton_5->setText(QApplication::translate("MainWindow", "Echo", 0));
         pushButton_6->setText(QApplication::translate("MainWindow", "Bruit ou Distorsion", 0));
+        pushButton_4->setText(QApplication::translate("MainWindow", "Coupures", 0));
         label_2->setText(QApplication::translate("MainWindow", "AUDIO", 0));
     } // retranslateUi
 
