@@ -32,6 +32,14 @@ int main(int argc, char **argv)
 
     w.setWindowTitle("test clinicien");
 
+    long int time1 = std::chrono::duration_cast<std::chrono::seconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+    int time3 = std::chrono::duration_cast<std::chrono::seconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+    double time4 = std::chrono::duration_cast<std::chrono::seconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+    qDebug() << time1;
+    //    qDebug() << time2;
+    qDebug() << time3;
+    qDebug() << time4;
+
     return a.exec();
 
 }
